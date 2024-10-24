@@ -17,4 +17,15 @@ form.addEventListener("submit", (event) => {
       return;
     }
 
+    // Scenario 3 - Invalid division (division by zero)
+  if (divider === "0") {
+    result.innerText = "Division not performed. Invalid number provided. Try again.";
+    
+    console.error(new Error("Division by zero"));
+    
+    return;
+  }
+
+
+
 });
